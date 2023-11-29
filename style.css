@@ -213,7 +213,7 @@ i.far.fa-trash-alt.fa-xl {
     margin-left: auto;
 }
 
-.fa-regular.fa-trash-can:hover {
+.fa-trash-alt:hover {
     color: hsl(224, 21%, 14%);
     cursor: pointer;
 }
@@ -238,6 +238,9 @@ button {
 	outline: inherit;
 }
 
+input[type="checkbox"]{
+    cursor:pointer;
+}
 
   .checkbox-container {
     display: inline-block;
