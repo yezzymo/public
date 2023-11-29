@@ -1,0 +1,298 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+
+:root {
+    --shadow-color: 211deg 16% 60%;
+    --shadow-elevation-medium:
+    0px 0.4px 0.5px hsl(var(--shadow-color) / 0.38),
+    0px 1.2px 1.3px -0.8px hsl(var(--shadow-color) / 0.38),
+    0px 3.1px 3.5px -1.7px hsl(var(--shadow-color) / 0.38),
+    0px 7.6px 8.5px -2.5px hsl(var(--shadow-color) / 0.38);
+}
+
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif; ;
+}
+
+body {
+    background-color: #f7fafd;
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid hsl(205, 33%, 90%);
+    color: hsl(219, 12%, 42%);
+    font-size: 16px;
+}
+
+input[type=text]:focus {
+    border: 1px solid hsl(219, 12%, 42%) !important;
+}
+
+.main-container {
+    max-width: 700px;
+    height: fit-content;
+    border-radius: 15px;
+    background: #ffffff;
+    --shadow-color: 211deg 16% 60%;
+    box-shadow:  var(--shadow-elevation-medium);
+    margin: auto;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.notification-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    gap: 1rem;
+}
+
+.notfication-number {
+background-color: hsl(219, 85%, 26%);
+color: white;
+padding: 3px 10px;
+font-size: 16px;
+border-radius: 4px;
+margin-left: 8px;
+}
+
+h1 {
+    color: hsl(224, 21%, 14%);
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    color: hsl(219, 14%, 63%);
+    margin: 6px;
+    font-weight: 400;
+}
+
+.marked-read {
+    color: hsl(219, 14%, 63%);
+}
+
+.marked-read:hover {
+    color: hsl(224, 21%, 14%);
+    cursor: pointer;
+}
+
+.notfications {
+    display: grid;
+    gap: 12px;
+}
+
+.user-name{
+    color: hsl(224, 21%, 14%);
+    font-size: 16px;
+    font-weight: 800;
+    padding-right: 5px;
+    }
+
+.user-message {
+    font-size: 16px;
+    color: hsl(219, 14%, 63%);
+    padding-right: 5px;
+    
+}
+
+.user-message-bold {
+    font-size: 16px;
+    font-weight: 800;
+    color: hsl(219, 12%, 42%);
+}
+
+.user-club {
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+    width: auto;
+    height: auto;
+}
+
+.user-club:hover {
+    color: hsl(1, 90%, 64%);
+    font-weight: 800;
+    cursor: pointer;
+  
+}
+
+.user-message-time {
+    color: hsl(219, 14%, 63%);
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+.user-meta {
+    min-height: fit-content;
+}
+
+.user-picture {
+    width: 50px;
+    height: 50px;
+    padding-right: 1rem;
+}
+
+.picture-commented {
+    width: 50px;
+    height: 50px;
+    margin-left: auto
+
+}
+
+.message-box.blue {
+    display: flex;
+    align-items: center;
+    border: 1px solid hsl(205, 33%, 90%);
+    border-radius: 8px;
+    padding: 1rem;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.message-box {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 1rem;
+    height: 30px;
+}
+
+.message-box.comment {
+    display: flex;
+    align-items: flex-start;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.user-text-box {
+    border: 1px solid hsl(0, 0%, 90%);
+   margin-top: 12px;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.dot{
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 50%;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 8px;
+}
+
+
+button[type=submit] {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;    
+}
+
+.fa-solid.fa-plus {
+    color: hsl(219, 14%, 63%);
+}
+
+.fa-solid:hover {
+    color: hsl(224, 21%, 14%);
+}
+
+.fa-regular.fa-trash-can {
+    color: hsl(219, 14%, 63%);
+    margin-left:  auto;
+}
+
+i.far.fa-trash-alt.fa-xl {
+    margin-left: auto;
+}
+
+.fa-regular.fa-trash-can:hover {
+    color: hsl(224, 21%, 14%);
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+    display: grid;
+    gap: 16px;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+  .checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 2rem; /* Platz für das Icon */
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border: solid 1px currentColor;
+    border-radius: 50%;
+  }
+  
+  .checkbox-container:hover input ~ .checkmark {
+    background-color: #f7fafd; 
+    border: solid 1px currentColor;
+}
+
+    .checkbox-container:hover input ~ .checkmark i {
+    color: transparent;
+    }
+    
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+    border: solid 1px #2196F3;
+    color: #fff ;
+  }
+
+  .checkbox-container input:checked ~ .checkmark i {
+    color: #fff !important;
+  }
+  
+  .checkmark i {
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .inputChecked  {
+    text-decoration: line-through;
+  }
+  
