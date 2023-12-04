@@ -1,25 +1,3 @@
-/* 
-function updateDisplay() {
-
-  const item = document.getElementsByTagName("li");
-  const listBox = document.getElementById("notfications");
-  const inputField = document.getElementById("addTask");
-
-
-  if (item.length == 0) {
-   listBox.style.display = "none";
-   console.log("empty")
-  }  else  {listBox.style.display = "grid";
-console.log("not Empty")}
-renderList();
-};
-
-document.addEventListener("DOMContentLoaded", updateDisplay);
-updateDisplay();
-*/
-
-
-
 document.getElementById("notification-box").addEventListener("submit", function(event) {
   event.preventDefault();
 
