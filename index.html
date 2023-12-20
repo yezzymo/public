@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/src/style.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
   </style>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <title>To Do App</title>
 
@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class="main-container">
-  <h1>To Do´s</h1>
+  <h1>To Do´s </h1>
 <form class="notification-box" id="notification-box">
   <input type="text" name="add-task" id="addTask" placeholder="Neue Aufgabe hinzufügen ...">
   <button type="submit" id="submit-task" class="gg-add"><i class="fa-solid fa-plus fa-xl"></i></button>
@@ -27,7 +27,47 @@
   </ul>
 </div>
 
-<script src="app.js" defer></script>
+<!--
+<form class="add">
+  <label for="name">Name:</label>
+  <input type="text" name="name">
+  <label for="alter">Alter:</label>
+  <input type="text" name="alter">
+  <Button style="padding: 16px; border: 1px solid black;">Add</Button>
+</form>
+
+<form  style="margin-top:22px;"class="delete">
+  <label for="id">Document Id:</label>
+  <input type="text" name="id">
+  <Button style="padding: 16px; border: 1px solid black;">Delete</Button>
+</form>
+
+<form class="update">
+  <label for="id">Update Name:</label>
+  <input type="text" name="id">
+  <button style="padding: 16px; border: 1px solid black;">Update</button>
+</form>
+
+<form class="signupForm">
+  <label for="email">E-mail</label>
+  <input type="email" name="email">
+  <label for="password">Passworf</label>
+  <input type="password" name="password" autocomplete>
+  <button style="padding: 16px; border: 1px solid black;"> Sign Up</button>
+</form>
+
+<form class="loginForm">
+  <label for="email">E-mail</label>
+  <input type="email" name="email">
+  <label for="password">Password</label>
+  <input type="password" name="password" autocomplete>
+  <button style="padding: 16px; border: 1px solid black;">Log In</button>
+</form>
+
+<button class="logout">LogOut</button>
+-->
+
+<script type="text/javascript" src="/dist/bundle.js"></script>
 
 </body>
 </html>
